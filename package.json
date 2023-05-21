@@ -4,8 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "run": "npx gulp",
-    "test": "node test/index.js"
+    "start": "npx gulp",
+    "test": "node test/index.js",
+    "build": "npx gulp html_build css_build js_build fonts_build copy_img fileinclude"
   },
   "repository": {
     "type": "git",
