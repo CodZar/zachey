@@ -1,0 +1,47 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+  <title>My maps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+</head>
+<body>
+  <div class="card card-body" id="mapList"></div>
+
+  <script>
+    // Загрузка данных из JSON файла
+    fetch("./zacheySteamMaps.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Обработка данных
+        let output = "";
+        data.forEach((item) => {
+          output +=
+            '<center><p class="maps-title">' + item.title + "</p></center>";
+          output +=
+            "<center><a href='" +
+            item.link +
+            "'>" +
+            "<img src='" +
+            item.image +
+            "' alt=''></a></center>";
+          output += "<br><br>";
+        });
+        // Вывод данных на страницу
+        document.getElementById("mapList").innerHTML = output;
+      })
+      .catch((error) => console.error(error));
+  </script>
+</body>

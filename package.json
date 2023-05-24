@@ -1,34 +1,32 @@
 {
-  "name": "zachey-website",
+  "name": "sybrax_spotify_app",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "author": "Sybrax",
+  "main": "src/app.js",
   "scripts": {
-    "start": "npx gulp",
-    "test": "node test/index.js",
-    "build": "npx gulp html_build css_build js_build fonts_build copy_img fileinclude"
+    "dev": "nodemon src/app.js --devmode",
+    "start": "node src/app.js",
+    "prettier": "prettier --write ./",
+    "get-refresh-token": "node getCode.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zachey01/zachey.git"
-  },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zachey01/zachey/issues"
+  "dependencies": {
+    "axios": "^1.2.4",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "module-alias": "^2.2.2",
+    "prettier": "^2.8.8",
+    "socket.io": "^4.5.4",
+    "spotify-web-api-node": "^5.0.2"
   },
-  "homepage": "https://github.com/zachey01/zachey#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-copy": "^1.1.0",
-    "gulp-file-include": "^2.3.0",
-    "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.62.1"
+    "errorhandler": "^1.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "_moduleAliases": {
+    "@src": "./src"
   }
 }

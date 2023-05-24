@@ -1,0 +1,134 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+  <title>Zachey</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div class="banner-img" style="background: url('./assets/img/banner.jpeg')"></div>
+    </div>
+    <div class="card-body">
+      <div class="profile-header">
+        <div class="profil-logo">
+          <img src="./assets/img/avatar.gif" />
+        </div>
+        <div class="badges-container">
+          <div class="badge-item">
+            <img src="./assets/img/badges/level_design.svg" alt="" />
+            <div class="tooltip tooltip-up">Level designer</div>
+          </div>
+          <div class="badge-item">
+            <img src="./assets/img/badges/js.svg" alt="" />
+            <div class="tooltip tooltip-up">JS developer</div>
+          </div>
+          <div class="badge-item">
+            <img src="./assets/img/badges/computer_science.svg" alt="" />
+            <div class="tooltip tooltip-up">Learn Computer Science</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-body">
+        <div class="username">Zachey01<span>#1871</span></div>
+        <div class="username">
+          <span>she/he</span>
+        </div>
+        <hr />
+        <div class="btn-container">
+          <a href="https://github.com/zachey01" target="_blank" class="btn btn-small">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://steamcommunity.com/id/zachey01/" target="_blank" class="btn btn-small">
+            <i class="bi bi-steam"></i>
+          </a>
+          <a href="https://medium.com/@bjzachey" target="_blank" class="btn btn-small">
+            <i class="bi bi-medium"></i>
+          </a>
+          <a href="https://t.me/zacheytg" target="_blank" class="btn btn-small">
+            <i class="bi bi-telegram"></i>
+          </a>
+          <a href="https://www.youtube.com/@ZacheyDev" target="_blank" class="btn btn-small">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://discordapp.com/users/1033246411363471472" target="_blank" class="btn btn-small">
+            <i class="bi bi-discord"></i>
+          </a>
+        </div>
+
+        <div class="basic-infos">
+          <div class="category-title">About me</div>
+          <p>
+            → Co-owner of <b><a href="https://shadowseek.ru">ShadowSeek</a></b>
+          </p>
+          <p>→ Owner of Telegram yaoi/femboy channels</p>
+          <p>→ I'm into NodeJS development and reading yaoi manga</p>
+          <p>→ I also develop bots for Telegram also on NodeJS</p>
+          <p>→ And i create edits on various works that interest me</p>
+        </div>
+        <div class="basic-infos">
+          <div class="category-title">Listen on Spotify</div>
+          <div id="spotify-container">
+            <div class="spotify hidden">
+              <div class="spotify-music-infos">
+                <div class="music-cover">
+                  <img src="./assets/img/avatar.jpeg" />
+                </div>
+                <div class="music-text">
+                  <div class="music-title">
+                    <b><a href="" target="_blank"> Title </a></b>
+                  </div>
+                  <div class="music-artist">
+                    by
+                    <a href="" target="_blank"> Artist </a>
+                  </div>
+                  <div class="music-album">
+                    in
+                    <a href="" target="_blank"> Album </a>
+                  </div>
+                </div>
+              </div>
+              <div class="spotify-music-tracker">
+                <div class="music-tracker-container">
+                  <div class="music-tracker"></div>
+                </div>
+                <div class="timer">
+                  <span>0:00</span>
+                  <span style="color: #696969">Playing</span>
+                  <span>0:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="spotify-listen-nothing">
+              <div class="text">Nothing is playing right now</div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <a href="/maps" target="_blank" class="btn">
+              <p>My maps</p>
+            </a>
+          </div>
+          <div class="btn-container">
+            <a href="/projects" target="_blank" class="btn">
+              <p>My projects</p>
+            </a>
+          </div>
+          <div class="btn-container">
+            <a href="/donate" target="_blank" class="btn btnDonate">
+              <p>Donate</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    statusElement.innerHTML = `Visual Studio Code status: ${status}`;
+  </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>

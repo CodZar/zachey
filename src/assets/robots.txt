@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /site/
-Allow: /
-Sitemap: https://zachey.space/sitemap.xml

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "NSWFparse",
+    "description": "Simple NSWF content parser from reddit",
+    "link": "https://github.com/zachey01/NSWFparse"
+  },
+  {
+    "name": "workshop-parser",
+    "description": "Simple parser for steam workshop on node.js",
+    "link": "https://github.com/zachey01/workshop-parser"
+  },
+  {
+    "name": "thisnotperson",
+    "description": "Simple nonexistent person generator for NodeJS",
+    "link": "https://github.com/zachey01/thisnotperson"
+  }
+]
