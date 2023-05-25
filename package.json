@@ -1,23 +1,25 @@
 {
-  "name": "sybrax_spotify_app",
-  "version": "1.0.0",
-  "description": "",
-  "author": "Sybrax",
+  "name": "Zachey Pesonal Website",
+  "version": "1.1.0",
+  "description": "Simple personal website styled for discord profile ",
+  "author": "Zachey",
   "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon src/app.js --devmode",
+    "dev": "npx nodemon src/app.js --devmode",
     "start": "node src/app.js",
-    "prettier": "prettier --write ./",
+    "prettier": "npx prettier --write ./",
     "get-refresh-token": "node getCode.js"
   },
   "license": "ISC",
   "dependencies": {
+    "@giuseppecampanelli/medium-api": "^1.0.0",
     "axios": "^1.2.4",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "module-alias": "^2.2.2",
     "prettier": "^2.8.8",
+    "rss-parser": "^3.13.0",
     "socket.io": "^4.5.4",
     "spotify-web-api-node": "^5.0.2"
   },

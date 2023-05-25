@@ -25,6 +25,9 @@ app.use('/', index)
 app.get('/donate', (req, res) => {
   res.render('donate')
 })
+app.get('/blog', (req, res) => {
+  res.render('blog')
+})
 app.get('/maps', (req, res) => {
   res.render('maps')
 })

@@ -52,7 +52,21 @@ html {
 .tooltip-up {
   bottom: 42px;
 }
-
+#blogPost a {
+  font-family: 'Whitney Medium Italic', sans-serif;
+  color: white;
+  text-decoration: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#blogPost i {
+  color: white;
+  margin-right: 5px;
+}
+#blogPost {
+  color: gray;
+}
 .tooltip-up::before {
   content: '';
   position: absolute;
