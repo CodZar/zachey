@@ -4,7 +4,7 @@ class AuthController {
   constructor() {
     if (!process.env.SPOTIFY_REFRESH_TOKEN) {
       console.log(
-        'Missing Spotify credentials in .env file. Please check the README.md file for more information.'
+        'Missing Spotify credentials in .env file. Please check the README.md file for more information.',
       )
       return
     }
